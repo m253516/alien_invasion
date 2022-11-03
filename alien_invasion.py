@@ -22,7 +22,7 @@ class AlienInvasion:
         self.bullets = pygame.sprite.Group()
 
         # Set the background color.
-        self.bg_color = (230, 230, 230)
+        self.bg_color = (230,230,230)
 
     def run_game(self):
         """Start the main loop for the game."""

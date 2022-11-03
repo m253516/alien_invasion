@@ -16,9 +16,9 @@ class Picture():
 
 pygame.init()
 screen = pygame.display.set_mode((600, 400))
-screen.fill((0, 0, 255))
+screen.fill((255, 255, 255))
 
-ship = Picture(screen, "ship.bmp")
+ship = Picture(screen, "ship2.bmp")
 ship.draw()
 pygame.display.flip()
 sleep(10)
