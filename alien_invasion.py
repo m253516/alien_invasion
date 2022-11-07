@@ -1,7 +1,7 @@
 import sys
 
 import pygame
-
+import time
 from settings import Settings
 from ship import Ship
 from bullet import Bullet
@@ -13,7 +13,7 @@ class AlienInvasion:
         pygame.init()
         self.settings = Settings()
 
-        self.screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
+        self.screen = pygame.display.set_mode((600, 600))
         self.settings.screen_width = self.screen.get_rect().width
         self.settings.screen_height = self.screen.get_rect().height
         pygame.display.set_caption("Alien Invasion")
@@ -41,6 +41,7 @@ class AlienInvasion:
     def _check_events(self):
         """Respond to keypresses and mouse events."""
         for event in pygame.event.get():
+            print(event)
             if event.type == pygame.QUIT:
                 sys.exit()
             elif event.type == pygame.KEYDOWN:
